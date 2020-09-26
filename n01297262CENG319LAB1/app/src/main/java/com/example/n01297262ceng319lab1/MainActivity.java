@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fragment = (disfragment)getSupportFragmentManager().findFragmentById(R.id.displayfragment);
-        this.message ="Main Activity:\nonCreate executed\n";
+        this.message =getString(R.string.main) + "\n" + getString(R.string.onCreate_executed)+ "\n";
 
         fragment.display(message);
     }
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 //    @Override
     protected void onStart() {
          super.onStart();
-        this.message += "onStart executed";
+        this.message += getString(R.string.onStart_executed);
         fragment.display(this.message);
     }
 }

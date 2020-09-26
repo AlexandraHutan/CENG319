@@ -19,7 +19,7 @@ public class aiactivity extends AppCompatActivity {
         setContentView(R.layout.activity_aiactivity);
         RelativeLayout relativeLayout = (RelativeLayout)findViewById(R.id.idai);
         TextView textView = new TextView(this);
-        textView.setText("\n\nonCreate executed\n");
+        textView.setText(getString(R.string.onCreate_executed)+"\n");
         relativeLayout.addView(textView);
         Toast.makeText(this, "OnCreate triggered",  Toast.LENGTH_SHORT).show();
 
@@ -29,7 +29,7 @@ public class aiactivity extends AppCompatActivity {
         super.onStart();
         RelativeLayout relativeLayout = (RelativeLayout)findViewById(R.id.idai);
         TextView textView = new TextView(this);
-        textView.setText("AIActivity:\nonStart executed\n");
+        textView.setText(getString(R.string.AIActivity) + "\n" + getString(R.string.onStart_executed)+ "\n");
 
         relativeLayout.addView(textView);
         Toast.makeText(this, "OnStart triggered",  Toast.LENGTH_SHORT).show();
@@ -40,7 +40,7 @@ public class aiactivity extends AppCompatActivity {
         super.onStop();
         RelativeLayout relativeLayout = (RelativeLayout)findViewById(R.id.idai);
         TextView textView = new TextView(this);
-        textView.setText("onStop executed\n");
+        textView.setText(getString(R.string.onStop_executed));
         Toast.makeText(this, "OnStop triggered",  Toast.LENGTH_SHORT).show();
         relativeLayout.addView(textView);
     }
@@ -51,7 +51,7 @@ public class aiactivity extends AppCompatActivity {
 
         RelativeLayout relativeLayout = (RelativeLayout)findViewById(R.id.idai);
         TextView textView = new TextView(this);
-        textView.setText("onDestroy executed\n");
+        textView.setText(getString(R.string.onDestroy_executed)+"\n");
         Toast.makeText(this, "OnDestroy triggered",  Toast.LENGTH_SHORT).show();
         relativeLayout.addView(textView);
     }

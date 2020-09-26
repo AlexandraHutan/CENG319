@@ -3,4 +3,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="life_cycle_methods_demonstration">Life Cycle Methods Demonstration</string>
+   <string name="AIActivity">AIActivity</string>
+    <string name="VRActivity">VRAcivity</string>
+    <string name="onCreate_executed">onCreate executed</string>
+    <string name="onStart_executed">AIActivity:\n onStart executed</string>
+    <string name="onDestroy_executed">onDestroy executed</string>
+    <string name="onStop_executed">onStop executed</string>
+    <string name ="main">Main Activity:</string>
+
+
+
+
 </resources>
